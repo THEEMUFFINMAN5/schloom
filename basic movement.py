@@ -35,7 +35,7 @@ sleep(.5)
 
 #go back to front of room
 tello.move_forward(500)
-tello.move_forward(300)
+tello.move_forward(250)
 sleep(.5)
 
 #turn again
