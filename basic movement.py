@@ -5,37 +5,50 @@ tello = tello.Tello()
 tello.connect()
 print(tello.get_battery())
 
-"take off"
+#take off
 tello.takeoff()
-"get up to required height"
+
+#get up to required height
 tello.move_up(165)
 sleep(.5)
-"cool flip"
+
+#cool flip
 tello.flip_back()
 sleep(.5)
-"go to the back of the room"
-tello.move_forward(750)
+
+#go to the back of the room
+tello.move_forward(500)
+tello.move_forward(250)
 sleep(.5)
-"turn"
+
+#turn
 tello.rotate_clockwise(90)
 sleep(.5)
-"go to required quadrant"
+
+#go to required quadrant
 tello.move_forward(400)
 sleep(.5)
-"turn"
+
+#turn
 tello.rotate_clockwise(90)
 sleep(.5)
-"go back to front of room"
-tello.move_forward(800)
+
+#go back to front of room
+tello.move_forward(500)
+tello.move_forward(300)
 sleep(.5)
-"turn again"
+
+#turn again
 tello.rotate_clockwise(90)
 sleep(.5)
-"go back to landing pad"
+
+#go back to landing pad
 tello.move_forward(500)
 sleep(.5)
-"cool flips"
+
+#cool flips
 tello.flip_back()
 tello.flip_forward()
-"land"
+
+#land
 tello.land()
