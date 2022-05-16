@@ -26,7 +26,7 @@ tello.rotate_clockwise(90)
 sleep(.5)
 
 #go to required quadrant
-tello.move_forward(400)
+tello.move_forward(350)
 sleep(.5)
 
 #turn
@@ -48,6 +48,7 @@ sleep(.5)
 
 #cool flips
 tello.flip_back()
+sleeo(.5)
 tello.flip_forward()
 
 #land
